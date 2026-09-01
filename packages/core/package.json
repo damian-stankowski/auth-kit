@@ -1,0 +1,24 @@
+{
+  "name": "@damian-stankowski/auth-kit-core",
+  "version": "0.0.1",
+  "description": "Framework-agnostic authentication core for Auth Kit",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
